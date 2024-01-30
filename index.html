@@ -1,238 +1,270 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Práticando Bootstrap</title>
-    <link rel="stylesheet" href="lib/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <header id="cabecalho">
+      <div class="container">
+        <nav class="navbar">
+          <img
+            id="logo"
+            src="assets/logo/24997006_7042771.svg"
+            alt="Logo Kiubi"
+          />
 
-        <div class="container">
-            <nav class="navbar">
-                <img id="logo" src="assets/logo/24997006_7042771.svg" alt="Logo Kiubi">
-
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#carousel-inicio">Carousel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#personagem">Personagens</a>
-                    </li>
-                </ul>
-
-            </nav>
-
-
-        </div>
-
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#carousel-inicio">Carousel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#personagem">Personagens</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-        
+      <div class="container">
+        <div
+          id="carousel-inicio"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div data-bs-interval="5000" class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="assets/carousel/naruto-boruto-next-generations-naruto-shippuden-classico-anime-japao-manga-animacao-aniversario-20-anos-800x400.jpeg"
+                alt=""
+              />
+              <div class="carousel-caption legenda">
+                <h2>Anime Naruto</h2>
+              </div>
+            </div>
+            <div data-bs-interval="5000" class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="assets/carousel/Naruto-especial-2.webp"
+                alt=""
+              />
+              <div class="carousel-caption legenda">
+                <h2>Trio Ninja</h2>
+              </div>
+            </div>
+            <div data-bs-interval="5000" class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="assets/carousel/naruto-ultimate-ninja-storm.jpg"
+                alt=""
+              />
+              <div class="carousel-caption legenda">
+                <h2>Rasengan & Chidori</h2>
+              </div>
+            </div>
+
+            <div data-bs-interval="5000" class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="assets/carousel/naruto.webp"
+                alt=""
+              />
+              <div class="carousel-caption legenda">
+                <h2>Akatsuki</h2>
+              </div>
+            </div>
+          </div>
+
+          <button
+            data-bs-target="#carousel-inicio"
+            data-bs-slide="prev"
+            class="carousel-control-prev"
+            type="button"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            data-bs-target="#carousel-inicio"
+            data-bs-slide="next"
+            class="carousel-control-next"
+            type="button"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-inicio"
+              class="active"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-inicio"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-inicio"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-inicio"
+              data-bs-slide-to="3"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="personagem" class="container personagens">
+        <h1>PERSONAGENS</h1>
+      </div>
+
+      <section>
         <div class="container">
-
-            <div id="carousel-inicio" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div data-bs-interval="5000" class="carousel-item active">
-                        <img class="d-block w-100" src="assets/carousel/naruto-boruto-next-generations-naruto-shippuden-classico-anime-japao-manga-animacao-aniversario-20-anos-800x400.jpeg" alt="">
-                        <div class="carousel-caption legenda">
-                            <h2>Anime Naruto</h2>
-                        </div>
-                    </div>
-                    <div data-bs-interval="5000" class="carousel-item">
-                        <img class="d-block w-100" src="assets/carousel/Naruto-especial-2.webp" alt="">
-                        <div class="carousel-caption legenda">
-                            <h2>Trio Ninja</h2>
-                        </div>
-                    </div>
-                    <div data-bs-interval="5000" class="carousel-item ">
-                        <img class="d-block w-100" src="assets/carousel/naruto-ultimate-ninja-storm.jpg" alt="">
-                        <div class="carousel-caption legenda">
-                            <h2>Rasengan & Chidori</h2>
-                        </div>
-                    </div>
-    
-                    <div data-bs-interval="5000" class="carousel-item ">
-                        <img class="d-block w-100" src="assets/carousel/naruto.webp" alt="">
-                        <div class="carousel-caption legenda">
-                            <h2>Akatsuki</h2>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="card">
+                <header class="card-header">
+                  <h2>Naruto</h2>
+                </header>
+                <img src="assets/personagens/naruto.jpg" alt="" />
+                <div class=""></div>
+                <div class="card-body">
+                  <p>
+                    Clã Uzumaki, Naruto nasceu, Com a Raposa de Nove Caudas se
+                    fundiu. Condenado e negligenciado pela aldeia, Seu sonho era
+                    ser Hokage, a maior ideia. Com o tempo, Naruto trabalhou
+                    duro, Ganhou respeito e reconhecimento, um futuro. Tornou-se
+                    um herói, um símbolo de esperança, E, por fim, o Sétimo
+                    Hokage, uma grande mudança.
+                  </p>
                 </div>
-    
-                
-                        <button data-bs-target="#carousel-inicio" data-bs-slide="prev" class="carousel-control-prev" type="button">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-    
-                        <button data-bs-target="#carousel-inicio" data-bs-slide="next" class="carousel-control-next" type="button">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-    
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel-inicio" class="active" data-bs-slide-to="0"></button>
-                            <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="3"></button>
-                        </div>
+              </article>
             </div>
-        </div>
-    
-        <div id="personagem" class="container personagens">
-            <h1 >PERSONAGENS</h1>
-        </div>
-    
-        <section>
-            <div class="container">
-                <div class="row">
-    
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <article class="card">
-                            <header class="card-header">
-                                <h2>Naruto</h2>
-                            </header>
-                            <img src="assets/personagens/naruto.jpg" alt="">
-                            <div class="">
-    
-                            </div>
-                            <div class="card-body">
-                                <p>Clã Uzumaki, Naruto nasceu, Com a Raposa de Nove Caudas se fundiu. Condenado e negligenciado pela aldeia, Seu sonho era ser Hokage, a maior ideia.
-    
-                                    Com o tempo, Naruto trabalhou duro, Ganhou respeito e reconhecimento, um futuro. Tornou-se um herói, um símbolo de esperança, E, por fim, o Sétimo Hokage, uma grande mudança.</p>
-                                </div>
-                               
-                            </article>
-                            
-    
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                            <article class="card">
-                                <header class="card-header">
-                                    <h2>Sasuke</h2>
-                                </header>
-                                <img src="assets/personagens/sasuke.jpg" alt="">
-                                <div class="">
-                    
-                                </div>
-                                <div class="card-body">
-                                    <p>Sasuke Uchiha é um dos últimos membros sobreviventes do clã Uchiha de Konohagakure, além de ser a reencarnação atual de Indra. Ele se tornou um shinobi para que pudesse algum dia ficar forte o suficiente para se vingar contra o seu irmão mais velho, Itachi, que tinha massacrado todo o seu clã 12.</p>
-                                </div>
-                    
-                            </article>  
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                            <article class="card">
-                                <header class="card-header">
-                                    <h2>Jiraya</h2>
-                                </header>
-                                <img src="assets/personagens/jiraiya.jpg" alt="">
-                                <div class="">
-                    
-                                </div>
-                                <div class="card-body">
-                                    <p>Jiraya, o ninja sábio e forte, Com seus sapos, ele é um suporte. Lendário, ele é um dos três, Com Tsunade e Orochimaru, seus pares são eles.
-                                      <br> Mestre do naruto, foi responsavel pelo seu treinamento mais tarde.  
-                                    </p>
-                                </div>
-                    
-                            </article>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                            <article class="card">
-                                <header class="card-header">
-                                    <h2>Kakashi</h2>
-                                </header>
-                                <img src="assets/personagens/kakashi.jpg" alt="">
-                                <div class="">
-                    
-                                </div>
-                                <div class="card-body">
-                                    <p>Clã Hatake, Kakashi é seu nome, Com Sharingan, ele é um grande renome. Ninja Copiador, seu apelido, De Konohagakure, ele é um querido.
-                    
-                                        Kakashi liderou o Time 7, Com Naruto, Sasuke e Sakura, um elenco de eleição. Com sua experiência, ele os treinou, E em batalhas, ele os ajudou.
-                                        
-                                        Ele se tornou o Sexto Hokage, E com Naruto, ele fez uma grande parceria. Juntos, eles protegeram a aldeia, E garantiram a paz com muita sabedoria.</p>
-                                </div>
-                    
-                            </article>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                                         
-                        <article class="card">
-                            <header class="card-header">
-                                <h2>Lee</h2>
-                            </header>
-                            <img src="assets/personagens/lee.png" alt="">
-                            <div class="">
-                
-                            </div>
-                            <div class="card-body">
-                                <p>Rock Lee, um ninja sem talento, Com perseverança, ele se tornou violento. Treinou duro para superar suas limitações, E se tornou um dos maiores guerreiros da nação. Mestre futuro no Taijutso e um dos ninjas mais fortes da aldeia.</p>
-                            </div>
-                
-                        </article>
-    
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-    
-                            <article class="card">
-                                <header class="card-header">
-                                    <h2>Sakura</h2>
-                                </header>
-                                <img src="assets/personagens/sakura.jpg" alt="">
-                                <div class="">
-                    
-                                </div>
-                                <div class="card-body">
-                                    <p>Sakura Haruno é uma kunoichi forte e inteligente de Konohagakure, treinada pela Quinta Hokage, Tsunade, para ser uma grande ninja médica e uma guerreira com força monstruosa. Ela é uma personagem importante em Naruto e Boruto, e é casada com Sasuke Uchiha, com quem tem uma filha chamada Sarada 1</p>
-                                </div>
-                    
-                            </article>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <article class="card">
-                                <header class="card-header">
-                                    <h2>Orochimaru</h2>
-                                </header>
-                                <img src="assets/personagens/orochimaru.jpg" alt="">
-                                <div class="">
-                    
-                                </div>
-                                <div class="card-body">
-                                    <p>Orochimaru é um dos Lendários Sannin de Konohagakure, que buscou a imortalidade para aprender todos os segredos do mundo 123.
-                                        Fez parte do lendário grupo 7 treinado por Sarutobi.
-                                    </p>
-                                </div>
-                    
-                            </article>
-    
-                        </div>
-           
-                        
-                        
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="card">
+                <header class="card-header">
+                  <h2>Sasuke</h2>
+                </header>
+                <img src="assets/personagens/sasuke.jpg" alt="" />
+                <div class=""></div>
+                <div class="card-body">
+                  <p>
+                    Sasuke Uchiha é um dos últimos membros sobreviventes do clã
+                    Uchiha de Konohagakure, além de ser a reencarnação atual de
+                    Indra. Ele se tornou um shinobi para que pudesse algum dia
+                    ficar forte o suficiente para se vingar contra o seu irmão
+                    mais velho, Itachi, que tinha massacrado todo o seu clã 12.
+                  </p>
                 </div>
-    
-    
-            
-            
-            
-           
-            
-    
+              </article>
             </div>
-        </section>
-
-        
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="card">
+                <header class="card-header">
+                  <h2>Jiraya</h2>
+                </header>
+                <img src="assets/personagens/jiraiya.jpg" alt="" />
+                <div class=""></div>
+                <div class="card-body">
+                  <p>
+                    Jiraya, o ninja sábio e forte, Com seus sapos, ele é um
+                    suporte. Lendário, ele é um dos três, Com Tsunade e
+                    Orochimaru, seus pares são eles. <br />
+                    Mestre do naruto, foi responsavel pelo seu treinamento mais
+                    tarde.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="card">
+                <header class="card-header">
+                  <h2>Kakashi</h2>
+                </header>
+                <img src="assets/personagens/kakashi.jpg" alt="" />
+                <div class=""></div>
+                <div class="card-body">
+                  <p>
+                    Clã Hatake, Kakashi é seu nome, Com Sharingan, ele é um
+                    grande renome. Ninja Copiador, seu apelido, De Konohagakure,
+                    ele é um querido. Kakashi liderou o Time 7, Com Naruto,
+                    Sasuke e Sakura, um elenco de eleição. Com sua experiência,
+                    ele os treinou, E em batalhas, ele os ajudou. Ele se tornou
+                    o Sexto Hokage, E com Naruto, ele fez uma grande parceria.
+                    Juntos, eles protegeram a aldeia, E garantiram a paz com
+                    muita sabedoria.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="card">
+                <header class="card-header">
+                  <h2>Lee</h2>
+                </header>
+                <img src="assets/personagens/lee.png" alt="" />
+                <div class=""></div>
+                <div class="card-body">
+                  <p>
+                    Rock Lee, um ninja sem talento, Com perseverança, ele se
+                    tornou violento. Treinou duro para superar suas limitações,
+                    E se tornou um dos maiores guerreiros da nação. Mestre
+                    futuro no Taijutso e um dos ninjas mais fortes da aldeia.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="card">
+                <header class="card-header">
+                  <h2>Sakura</h2>
+                </header>
+                <img src="assets/personagens/sakura.jpg" alt="" />
+                <div class=""></div>
+                <div class="card-body">
+                  <p>
+                    Sakura Haruno é uma kunoichi forte e inteligente de
+                    Konohagakure, treinada pela Quinta Hokage, Tsunade, para ser
+                    uma grande ninja médica e uma guerreira com força
+                    monstruosa. Ela é uma personagem importante em Naruto e
+                    Boruto, e é casada com Sasuke Uchiha, com quem tem uma filha
+                    chamada Sarada 1
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="card">
+                <header class="card-header">
+                  <h2>Orochimaru</h2>
+                </header>
+                <img src="assets/personagens/orochimaru.jpg" alt="" />
+                <div class=""></div>
+                <div class="card-body">
+                  <p>
+                    Orochimaru é um dos Lendários Sannin de Konohagakure, que
+                    buscou a imortalidade para aprender todos os segredos do
+                    mundo 123. Fez parte do lendário grupo 7 treinado por
+                    Sarutobi.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    
-
 
     <script src="lib/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
