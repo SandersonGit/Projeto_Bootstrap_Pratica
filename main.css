@@ -1,0 +1,31 @@
+#cabecalho {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #fff;
+}
+
+#logo {
+    height: 100px;
+}
+
+#carousel-inicio {
+    padding-top: 120px;
+}
+
+.legenda {
+    color: rgb(182, 172, 247);
+}
+.personagens {
+    padding: 70px;
+    text-align: center;
+}
+#personagem {
+    padding-top: 120px;
+}
+.card {
+    height: 700px;
+    /* padding: 50px; */
+    margin: 30px;
+}
